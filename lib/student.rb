@@ -7,12 +7,12 @@ class Student
   def initialize(name, grade, id=nill)
     @name = name
     @grade = grade
-    @id = id 
+    @id = id
   end
 
 
   def self.create_table
-    sql = <<-SQL 
+    sql = <<-SQL
       CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY,
         name TEXT,
@@ -20,5 +20,5 @@ class Student
       )
     SQL
   end
-  
+
 end
